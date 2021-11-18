@@ -34,15 +34,15 @@ int main(){
 	pthread_t hilo_time;
 	pthread_t hilo_pros;
 	
-	pthread_create(*hilo_time,NULL,time,&var);
-	pthread_create(*hilo_pros,NULL,time,&var);
+	pthread_create(&hilo_time,NULL,time,&var);
+	pthread_create(&hilo_pros,NULL,time,&var);
 	return 0;
 }
 
 void* time(void *arg){
-	
+	clases var = *((clases*)arg);
 }
 
 void* process(void *arg){
-	
+	clases var = *((clases*)arg);
 }
