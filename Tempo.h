@@ -21,7 +21,7 @@ Tempo::Tempo(){
 // Genera el cronometro, mostrando desde los segundos hasta los dias
 void Tempo::time_lapse(){
 	do{
-		pos.go_xy(1,1);
+		pos.go_xy(30,1);
 		cout<<" "<<d<<":"<<h[0]<<h[1]<<":"<<m[0]<<m[1]<<":"<<s[0]<<s[1];
 	/*	printf("\n %d:%d%d:%d%d:%d%d",d,h[0],h[1],m[0],m[1],s[0],s[1]);	*/
 		Sleep(1000);

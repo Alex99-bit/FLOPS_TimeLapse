@@ -8,6 +8,6 @@ class Operaciones{
 
 void Operaciones::operacion(){
 	do{
-		
+		// Realizar operaciones de coma flotante complejas
 	}while(true);
 }

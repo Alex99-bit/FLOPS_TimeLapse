@@ -3,6 +3,8 @@
 #include "Tempo.h"
 #include "Operaciones.h"
 
+#define sys system
+
 class Init_Index{
 	private:
 		GotoXY pos;
@@ -65,8 +67,10 @@ void Init_Index::menu(){
 			// selecciona la opcion de acuerdo a la posicion del cursor
 			switch(y){
 				case 3:
-					pos.go_xy(30,3);
-					cout<<"Option doesnt available for now";
+					/*pos.go_xy(30,3);
+					cout<<"Option doesnt available for now";*/
+					sys("cls");
+					clock.time_lapse();
 				break;
 				case 4:
 					exit(0);
