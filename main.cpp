@@ -6,6 +6,7 @@
 */
 
 #include <iostream>
+#include <conio.h>
 #include <windows.h>
 #include <time.h>
 #include <pthread.h>
@@ -14,7 +15,9 @@ using namespace std;
 
 #define sys system
 
+// Hilo principal
 int main(){
+	sys("color 0a");
 	Init_Index obj;
 	obj.menu();
 	return 0;
