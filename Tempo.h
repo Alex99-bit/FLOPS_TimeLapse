@@ -1,14 +1,16 @@
 
 class Tempo{
 	private:
-		int h[2],m[2],s[2],d,x=1;
+		int h[2],m[2],s[2],d,x;
 		GotoXY pos;
 	public:
 		Tempo();
 		void time_lapse();
 };
 
+// Constructor, inicializa los arreglos en ceros
 Tempo::Tempo(){
+	x=1;
 	for(int i=0;i<2;i++){
 		h[i]=0;
 		m[i]=0;
@@ -16,6 +18,7 @@ Tempo::Tempo(){
 	}
 }
 
+// Genera el cronometro, mostrando desde los segundos hasta los dias
 void Tempo::time_lapse(){
 	do{
 		pos.go_xy(1,1);

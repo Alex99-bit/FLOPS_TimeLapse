@@ -65,7 +65,7 @@ void Init_Index::menu(){
 			// selecciona la opcion de acuerdo a la posicion del cursor
 			switch(y){
 				case 3:
-					pos.go_xy(25,3);
+					pos.go_xy(30,3);
 					cout<<"Option doesnt available for now";
 				break;
 				case 4:
